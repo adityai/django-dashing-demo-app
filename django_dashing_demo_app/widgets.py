@@ -20,3 +20,10 @@ class NewClientsWidget(NumberWidget):
     def get_more_info(self):
         global users
         return '{} fakes'.format(users/10)
+
+class NewNumberWidget(NumberWidget):
+    title = 'New Number'
+
+    def get_value(self):
+        return 1000
+

@@ -7,8 +7,11 @@ from dashing.utils import router
 from django.views.generic.base import RedirectView
 
 from .widgets import NewClientsWidget
+from .widgets import NewNumberWidget
+
 
 router.register(NewClientsWidget, 'new_users_widget')
+router.register(NewNumberWidget, 'new_number_widget')
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls), name='admin'),

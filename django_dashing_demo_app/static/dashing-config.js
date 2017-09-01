@@ -14,6 +14,17 @@ dashboard.addWidget('new_users_widget', 'Number', {
     interval: 5000
 });
 
+dashboard.addWidget('new_number_widget', 'Number', {
+    getData: function () {
+        var self = this;
+        Dashing.utils.get('new_number_widget', function(scope) {
+            $.extend(self.scope, scope);
+        });
+    },
+    interval: 5000
+});
+
+
 dashboard.addWidget('buzzwords_widget', 'List', {
     getData: function () {
         $.extend(this.scope, {
