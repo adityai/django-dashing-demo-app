@@ -48,5 +48,6 @@ dashboard.addWidget('mongo_widget', 'Number', {
         Dashing.utils.get('mongo_widget', function(scope) {
             $.extend(self.scope, scope);
         });
+        interval: 5000
     }
 });
