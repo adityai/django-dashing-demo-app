@@ -66,7 +66,7 @@ ROOT_URLCONF = 'django_dashing_demo_app.urls'
 WSGI_APPLICATION = 'django_dashing_demo_app.wsgi.application'
 
 DASHING = {
-    'INSTALLED_WIDGETS': ('number', 'list', 'graph', 'clock', 'weather'),
+    'INSTALLED_WIDGETS': ('number', 'list', 'graph', 'clock', 'weather', 'map'),
 }
 
 # Internationalization
